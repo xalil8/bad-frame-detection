@@ -12,7 +12,7 @@ def bad_frame_detect(frame,previous_sum):
         sum1 = sum(cv2.sumElems(frame))
         diff = abs(sum1 - previous_sum)
         previous_sum = sum1
-        ratio = diff/(1920*1080)
+        ratio = diff/(1920*1080) # 1920x1080 should be dimensions
         return ratio
 
 
